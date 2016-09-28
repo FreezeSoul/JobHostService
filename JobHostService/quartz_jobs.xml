@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<job-scheduling-data
+xmlns="http://quartznet.sourceforge.net/JobSchedulingData"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.0">
+  <processing-directives>
+    <overwrite-existing-data>true</overwrite-existing-data>
+  </processing-directives>
+  <schedule>
+    <job>
+      <name>myjob</name>
+      <description>Job to Test</description>
+      <job-type>QuartzJobService.Core.JobTest, QuartzJobService.Core</job-type>
+    </job>
+    <trigger>
+      <simple>
+        <name>my-trigger</name>
+        <job-name>myjob</job-name>
+        <start-time>1999-06-28T18:15:00+02:00</start-time>
+        <repeat-count>-1</repeat-count>
+        <repeat-interval>300</repeat-interval>
+        </simple>
+    </trigger>
+  </schedule>
+</job-scheduling-data>

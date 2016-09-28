@@ -1,0 +1,13 @@
+﻿Installing assembly 'F:\Code\MyProject\JobHostService\JobHostService\JobHostService\bin\Debug\JobHostService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = F:\Code\MyProject\JobHostService\JobHostService\JobHostService\bin\Debug\JobHostService.InstallLog
+   assemblypath = F:\Code\MyProject\JobHostService\JobHostService\JobHostService\bin\Debug\JobHostService.exe
+Installing service LMS多任务承载服务...
+Service LMS多任务承载服务 has been successfully installed.
+Creating EventLog source LMS多任务承载服务 in log Application...
+Committing assembly 'F:\Code\MyProject\JobHostService\JobHostService\JobHostService\bin\Debug\JobHostService.exe'.
+Affected parameters are:
+   logtoconsole = 
+   logfile = F:\Code\MyProject\JobHostService\JobHostService\JobHostService\bin\Debug\JobHostService.InstallLog
+   assemblypath = F:\Code\MyProject\JobHostService\JobHostService\JobHostService\bin\Debug\JobHostService.exe

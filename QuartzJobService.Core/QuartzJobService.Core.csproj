@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{522A3B8F-BA1E-4EB6-A235-F807F7C4142A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>QuartzJobService.Core</RootNamespace>
+    <AssemblyName>QuartzJobService.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="C5, Version=1.1.0.0, Culture=neutral, PublicKeyToken=06a1b38866503b69, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\C5.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Quartz, Version=1.0.3.3, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\Quartz.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.ServiceBus, Version=1.8.0.0, Culture=neutral, PublicKeyToken=0b3305902db7183f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>Lib\Rhino.ServiceBus\Rhino.ServiceBus.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\FileWatcher.cs" />
+    <Compile Include="JobHelper.cs" />
+    <Compile Include="JobTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Lib\C5.dll" />
+    <Content Include="Lib\Common.Logging.dll" />
+    <Content Include="Lib\Common.Logging.Log4Net.dll" />
+    <Content Include="Lib\log4net.dll" />
+    <Content Include="Lib\Quartz.dll" />
+    <Content Include="Lib\Rhino.ServiceBus\acknowledgements.txt" />
+    <Content Include="Lib\Rhino.ServiceBus\Castle.Core.dll" />
+    <Content Include="Lib\Rhino.ServiceBus\Castle.Core.xml" />
+    <Content Include="Lib\Rhino.ServiceBus\Castle.DynamicProxy2.dll" />
+    <Content Include="Lib\Rhino.ServiceBus\Castle.DynamicProxy2.xml" />
+    <Content Include="Lib\Rhino.ServiceBus\Castle.MicroKernel.dll" />
+    <Content Include="Lib\Rhino.ServiceBus\Castle.MicroKernel.xml" />
+    <Content Include="Lib\Rhino.ServiceBus\Castle.Windsor.dll" />
+    <Content Include="Lib\Rhino.ServiceBus\Castle.Windsor.xml" />
+    <Content Include="Lib\Rhino.ServiceBus\Esent.Interop.dll" />
+    <Content Include="Lib\Rhino.ServiceBus\Esent.Interop.xml" />
+    <Content Include="Lib\Rhino.ServiceBus\license.txt" />
+    <Content Include="Lib\Rhino.ServiceBus\Rhino.DistributedHashTable.Client.dll" />
+    <Content Include="Lib\Rhino.ServiceBus\Rhino.DistributedHashTable.dll" />
+    <Content Include="Lib\Rhino.ServiceBus\Rhino.PersistentHashTable.dll" />
+    <Content Include="Lib\Rhino.ServiceBus\Rhino.Queues.dll" />
+    <Content Include="Lib\Rhino.ServiceBus\Rhino.ServiceBus.dll" />
+    <Content Include="Lib\Rhino.ServiceBus\Wintellect.Threading.dll" />
+    <Content Include="Lib\Rhino.ServiceBus\Wintellect.Threading.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

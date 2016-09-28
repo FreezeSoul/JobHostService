@@ -1,0 +1,60 @@
+INFO 2012-04-14 05:44:42 每 Scheduler Start
+INFO 2012-04-14 05:44:42 每 Using default implementation for object serializer
+INFO 2012-04-14 05:44:42 每 Using default implementation for ThreadExecutor
+INFO 2012-04-14 05:44:42 每 Initialized Scheduler Signaller of type: Quartz.Core.SchedulerSignalerImpl
+INFO 2012-04-14 05:44:42 每 Quartz Scheduler v.2.0.0.400 created.
+INFO 2012-04-14 05:44:42 每 Registering Quartz Job Initialization Plug-in.
+INFO 2012-04-14 05:44:42 每 RAMJobStore initialized.
+INFO 2012-04-14 05:44:42 每 Registering remoting channel of type 'System.Runtime.Remoting.Channels.Tcp.TcpChannel' to port (555) with name (httpQuartz)
+INFO 2012-04-14 05:44:42 每 Remoting channel registered successfully
+INFO 2012-04-14 05:44:42 每 Successfully marhalled remotable scheduler under name 'QuartzScheduler'
+INFO 2012-04-14 05:44:42 每 Scheduler meta-data: Quartz Scheduler (v2.0.0.400) 'JobHostService' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'Quartz.Core.QuartzScheduler' - access via remote incovation.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'Quartz.Simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'Quartz.Simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+INFO 2012-04-14 05:44:42 每 Quartz scheduler 'JobHostService' initialized
+INFO 2012-04-14 05:44:42 每 Quartz scheduler version: 2.0.0.400
+INFO 2012-04-14 05:44:42 每 Parsing XML file: F:\Code\MyProject\JobHostService\JobHostService\JobHostService.Test\bin\Debug\quartz_jobs.xml with systemId: ~quartz_jobs.xml
+DEBUG2012-04-14 05:44:43 每 Found 0 delete job group commands.
+DEBUG2012-04-14 05:44:43 每 Found 0 delete trigger group commands.
+DEBUG2012-04-14 05:44:43 每 Found 0 delete job commands.
+DEBUG2012-04-14 05:44:43 每 Found 0 delete trigger commands.
+DEBUG2012-04-14 05:44:43 每 Directive 'overwrite-existing-data' specified as: True
+DEBUG2012-04-14 05:44:43 每 Directive 'ignore-duplicates' specified as: False
+DEBUG2012-04-14 05:44:43 每 Found 1 job definitions.
+DEBUG2012-04-14 05:44:43 每 Parsed job definition: JobDetail 'MYJOBGROUP.myjob':  jobType: 'QuartzJobService.Core.JobTest persistJobDataAfterExecution: False concurrentExectionDisallowed: False isDurable: False requestsRecovers: False
+DEBUG2012-04-14 05:44:43 每 Found 1 trigger definitions.
+DEBUG2012-04-14 05:44:44 每 Parsed trigger definition: Trigger 'MYTRIGGER_GROUP.my-trigger':  triggerClass: 'Quartz.Impl.Triggers.CronTriggerImpl calendar: '' misfireInstruction: 0 nextFireTime: 
+INFO 2012-04-14 05:44:44 每 Adding 1 jobs, 1 triggers.
+INFO 2012-04-14 05:44:44 每 Adding job: MYJOBGROUP.myjob
+DEBUG2012-04-14 05:44:44 每 Scheduling job: MYJOBGROUP.myjob with trigger: MYTRIGGER_GROUP.my-trigger
+DEBUG2012-04-14 05:44:44 每 Rescheduling job: MYJOBGROUP.myjob with updated trigger: MYTRIGGER_GROUP.my-trigger
+INFO 2012-04-14 05:44:44 每 Scheduler JobHostService_$_NON_CLUSTERED started.
+DEBUG2012-04-14 05:44:44 每 Batch acquisition of 1 triggers
+DEBUG2012-04-14 05:44:45 每 Producing instance of Job 'MYJOBGROUP.myjob', class=QuartzJobService.Core.JobTest
+DEBUG2012-04-14 05:44:45 每 Batch acquisition of 1 triggers
+DEBUG2012-04-14 05:44:45 每 Calling Execute on job MYJOBGROUP.myjob
+INFO 2012-04-14 05:44:45 每 I am alive!
+DEBUG2012-04-14 05:44:45 每 Trigger instruction : NoInstruction
+INFO 2012-04-14 05:44:45 每 Scheduler Shutdown
+INFO 2012-04-14 05:44:45 每 Scheduler JobHostService_$_NON_CLUSTERED shutting down.
+INFO 2012-04-14 05:44:45 每 Scheduler JobHostService_$_NON_CLUSTERED paused.
+DEBUG2012-04-14 05:44:45 每 Shutting down threadpool...
+DEBUG2012-04-14 05:44:45 每 WorkerThread is shut down
+DEBUG2012-04-14 05:44:45 每 WorkerThread is shut down
+DEBUG2012-04-14 05:44:45 每 WorkerThread is shut down
+DEBUG2012-04-14 05:44:45 每 WorkerThread is shut down
+DEBUG2012-04-14 05:44:45 每 WorkerThread is shut down
+DEBUG2012-04-14 05:44:45 每 WorkerThread is shut down
+DEBUG2012-04-14 05:44:45 每 WorkerThread is shut down
+DEBUG2012-04-14 05:44:45 每 WorkerThread is shut down
+DEBUG2012-04-14 05:44:45 每 WorkerThread is shut down
+DEBUG2012-04-14 05:44:45 每 WorkerThread is shut down
+DEBUG2012-04-14 05:44:45 每 No executing jobs remaining, all threads stopped.
+DEBUG2012-04-14 05:44:45 每 Shutdown of threadpool complete.
+INFO 2012-04-14 05:44:45 每 Successfully disconnected remotable scheduler
+INFO 2012-04-14 05:44:45 每 Scheduler JobHostService_$_NON_CLUSTERED Shutdown complete.
