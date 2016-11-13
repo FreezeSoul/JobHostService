@@ -1,1 +1,1 @@
-Quartz.net Windows Service Job Hosting by 2010.12.4
+Quartz.net Windows Service Job Hosting by FreezeSoul 2010.12.4
